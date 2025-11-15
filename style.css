@@ -121,6 +121,9 @@ section {
     flex: 1; 
 }
 
+#about {
+  display: flex;
+}
 .greeting {
   color: #fff;
     font-size: 19px;
@@ -415,3 +418,54 @@ p, h1, h2 {
     font-size: 0.98rem;
   }
 }
+
+@media (max-width: 1090px) {
+  .cardProfile p, .cardDescription, .cardTitle {
+  line-height: 30px;
+  font-size: 20px;
+}
+}
+
+@media (max-width: 1009px) {
+  .cardProfile p, .cardDescription, .cardTitle {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+  .cardProfile h1, .name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 886px) {
+  .cardProfile h1, .name {
+    font-size: 30px;
+  }
+}
+@media (max-width: 710px) {
+  .card1, .card2, .card3 {
+     width: 200px;
+    padding: 30px 20px;
+    margin: 20px; /* Separates from other cards */
+  }
+}
+
+@media (max-width: 600px) {
+  .card1, .card2, .card3 {
+     width: 150px;
+    padding: 20px 10px;
+    margin: 10px; /* Separates from other cards */
+  }
+
+  .cardProfile h1, .name {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 755px) {
+  .cardProfile p, .cardDescription, .cardTitle {
+  line-height: 16px;
+  font-size: 10px;
+}
+}
+
