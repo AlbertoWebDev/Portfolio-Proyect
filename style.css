@@ -4,12 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Font */
+/* FontS */
 .story-script-regular {
   font-family: "Story Script", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.playfair-display-TitleFont {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
 /* Body */
@@ -31,7 +39,7 @@ header {
 }
 
 .navbar {
-  font-family: 'Story Script', sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   max-width: 1700px;
   margin: 0 auto;
