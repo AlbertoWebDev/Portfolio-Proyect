@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* FontS */
+
+/* Fonts */
 .story-script-regular {
   font-family: "Story Script", sans-serif;
   font-weight: 400;
@@ -18,13 +19,11 @@
   font-style: normal;
 }
 
-
-
 /* Body */
 body {
   font-family: "Poppins", sans-serif;
-  color: #222;
-  background-color: #f7f7f7;
+  
+ background-color: #264653;
   line-height: 1.6;
 }
 
@@ -76,7 +75,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: aquamarine;
+  color: #2a9d8f;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
@@ -105,7 +104,7 @@ p {
 
 /* Sections */
 
-#about {
+section {
     background-color: #0d1117; 
     border-radius: 20px;
     color: #ffffff;
@@ -186,8 +185,10 @@ p {
 footer {
   text-align: center;
   padding: 32px 0;
-  background-color: #111;
-  color: #fff;
+  background-color: #1c1437;
+}
+
+footer p {
   font-size: 14px;
 }
 
@@ -206,6 +207,118 @@ footer {
 .nav-links {
   gap: 3rem; /* comfortable spacing on wide screens */
 }
+
+p, h1, h2 {
+  color: #fff;
+}
+
+.whoAmI {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px 20px;
+}
+
+.cardProfile p {
+  line-height: 47.5px;
+  font-size: 20px;
+}
+
+.profileImg {
+  width: 100%;
+  max-width: 300px;
+  height: auto; 
+}
+
+.cardsColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.whoAmI h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.whoAmI img {
+  margin-bottom: 60px;
+}
+
+.card1, .card2, .card3 {
+
+    flex: 1; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 300px;
+    padding: 40px 20px;
+    margin: 20px; /* Separates from other cards */
+
+    background-color: #1e2531;
+    color: #f1f1f1;
+    border-radius: 12px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular */
+    background-color: rgba(255, 255, 255, 0.05); 
+    border: 1px solid #4e7896;
+    
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardIcon img {
+  padding-top: 60px; /* Centered */
+}
+
+.cardTitle {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    font-size: 0.95em;
+    color: #c9d1d9;
+    line-height: 1.5;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    /* Elevates a little the card on his Y axis */
+    transform: translateY(-5px);
+    
+    /* glow effect */
+    box-shadow: 0 8px 30px rgba(0, 188, 212, 0.2), 0 4px 15px rgba(0, 0, 0, 0.5); 
+    
+    border: 1px solid #4e7896;
+}
+
+
+
 
 @media (max-width: 900px) {
   .nav-links {

@@ -16,12 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <a href="index.html" class="logo">
-                    <img src="img/logo.webp" alt="logo"/>
+                    <img src="img/logo.webp" alt="logo"/><!-- When clicked on mobile devices, it opens up the whole header -->
                 </a>
             </button>
             <ul class="nav-links" id="navLinks">
@@ -33,8 +34,8 @@
         </nav>
     </header>
 
-    <main> <!--Divided by sections for better control overall-->
-        <section id="about"> <!--Divided in two hero sections-->
+    <main> <!-- Divided by sections for better control overall -->
+        <section id="about"> <!-- Divided in two hero sections -->
             <div class="hero-left">
                 <p class="greeting">Hi! I'm</p>
                 <h1 class="name">Michael Willis</h1>
@@ -51,6 +52,64 @@
                 <img src="img/pfp.png" alt="Profile Picture" class="profile-img">
             </div>
         </section>
+        <!-- Second part of about -->
+         <section class="aboutSection">
+            <div class="whoAmI">
+                <div class="cardProfile">
+                    <h1>Who am I?</h1>
+                    <img src="img/photo1.png" alt="Profile Picture" class="profileImg">
+                    <p>
+                        I am Michael Willis, and my passion for technology, programming, and design drives me every day. As a web developer, I have specialized in the fascinating world of FrontEnd.
+
+                        I enjoy challenging limits and exploring new technologies to deliver creative and effective solutions.
+
+                        I am innovative, proactive, and capable of designing, creating, and maintaining attractive and interactive websites. I adapt to team needs and am committed to established work objectives.
+                    </p>
+                 </div>
+
+            <div class="cardsColumn">
+                <!-- Card 1 -->
+                <div class="card1">
+                    <div class="cardIcon">
+                        <img src="img/svg1.svg" alt="Card Icons">
+                    </div>
+
+                    <h3 class="cardTitle">UX/UI DESIGN</h3>
+
+                    <p class="cardDescription">
+                        Focused on understanding users, solving problems, and creating prototypes for exceptional digital experiences.
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card2">
+                    <div class="cardIcon">
+                        <img src="img/svg2.svg" alt="Card Icons">
+                    </div>
+
+                    <h3 class="cardTitle">TECH</h3>
+
+                    <p class="cardDescription">
+                        Stack of design tools and development languages to deliver high-performance digital solutions.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card3">
+                    <div class="cardIcon">
+                        <img src="img/svg2.svg" alt="Card Icons">
+                    </div>
+
+                    <h3 class="cardTitle">FRONTEND DEVELOPER</h3>
+
+                    <p class="cardDescription">
+                        Developing innovative user interfaces with best practices, responsive designs, and content optimization.
+                    </p>
+                </div>
+                </div>
+            </div>
+         </section>
 
         <section id="projects">
             <h2>Projects</h2>
