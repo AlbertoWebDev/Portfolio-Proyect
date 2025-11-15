@@ -29,10 +29,23 @@
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a short introduction about yourself here.</p>
+    <main> <!--Divided by sections for better control overall-->
+        <section id="about"> <!--Divided in two hero sections-->
+            <div class="hero-left">
+                <p class="greeting">Hi! I'm</p>
+                <h1 class="name">Michael Willis</h1>
+                <p class="title">Web Developer</p>
+                <p class="slogan">Transforming ideas into reality by clean code and innovative solutions</p>
+        
+                <div class="CV_Link">
+                    <a href="#" class="btn-cv">Download CV</a>
+                    
+                </div>
+            </div>
+    
+            <div class="hero-right">
+                <img src="img/pfp.png" alt="Profile Picture" class="profile-img">
+            </div>
         </section>
 
         <section id="projects">
@@ -55,7 +68,7 @@
         <p>&copy; 2025 Michael Willis. All rights reserved.</p>
     </footer>
 
-    <script>
+    <script> //script for hamburguer menu functionality
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 

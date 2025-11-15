@@ -68,7 +68,8 @@ header {
 }
 
 .nav-links a:hover {
-  color: #00b4d8;
+  color: aquamarine;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 /* Main Sections */
@@ -78,6 +79,7 @@ main {
   padding: 0 2rem;
 }
 
+/* Global styles */
 section {
   margin-bottom: 4rem;
 }
@@ -90,21 +92,100 @@ h2 {
 
 p {
   font-size: 1rem;
-  color: #333;
+  color: black;
+}
+
+/* Sections */
+
+#about {
+    background-color: #0d1117; 
+    border-radius: 20px;
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    padding: 50px 100px;
+
+    /*min height where it looks good*/
+    min-height: 400px;
+}
+
+.hero-left, .hero-right {
+    /* Allows both columns to occupy the same spot */
+    flex: 1; 
+}
+
+.greeting {
+  color: #fff;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.title {
+    font-size: 29px;
+    color: #4e7896;
+    margin-top: 5px;
+}
+
+.slogan {
+    font-size: 17px;
+    color: #fff;
+    margin: 20px 0;
+    max-width: 400px;
+}
+
+.CV_Link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CV Button */
+.btn-cv {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: #4e7896;
+    color: #0d1117;
+}
+
+
+/* Image styles */
+.hero-right {
+    position: relative; 
+    text-align: center;
+}
+
+.profile-img {
+    max-width: 80%;
+    height: auto;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem 0;
+  padding: 32px 0;
   background-color: #111;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 /* header and navbar helpers */
 .navbar {
-  padding: 0.75rem 2rem;
+  padding: 12px 32px;
   transition: padding 200ms ease, gap 200ms ease;
 }
 
