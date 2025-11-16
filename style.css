@@ -154,13 +154,16 @@ section {
 
 /* Projects section */
 .projects-container {
-  display: flex;
   max-width: var(--max-width);
   margin: 40px;
-  gap: 230px; /* gap between cards */
+  gap: 100px; /* gap between cards */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 1.5rem; /* spacing between cards */
+  margin-top: 1.5rem;
 }
 
-.project--icon {
+.project--icon img { width: 400px;
 
 }
 
@@ -227,6 +230,10 @@ section {
   .nav-links > li + li { margin-top: .25rem; }
 
   .navbar { padding: .5rem var(--container-padding); }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* small screens tweaks */
