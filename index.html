@@ -1,151 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Willis || FrontEnd Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michael Willis || Frontend Developer</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Story+Script&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                <a href="index.html" class="logo">
-                    <img src="img/logo.webp" alt="logo"/><!-- When clicked on mobile devices, it opens up the whole header -->
-                </a>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Homepage">
+        <img src="img/logo.webp" alt="Michael Willis logo">
+      </a>
 
-    <main> <!-- Divided by sections for better control overall -->
-        <section id="about"> <!-- Divided in two hero sections -->
-            <div class="hero-left">
-                <p class="greeting">Hi! I'm</p>
-                <h1 class="name">Michael Willis</h1>
-                <p class="title">Web Developer</p>
-                <p class="slogan">Transforming ideas into reality by clean code and innovative solutions</p>
-        
-                <div class="CV_Link">
-                    <a href="#" class="btn-cv">Download CV</a>
-                    
-                </div>
-            </div>
-    
-            <div class="hero-right">
-                <img src="img/pfp.png" alt="Profile Picture" class="profile-img">
-            </div>
-        </section>
-        <!-- Second part of about -->
-         <section class="aboutSection">
-            <div class="whoAmI">
-                <div class="cardProfile">
-                    <h1>Who am I?</h1>
-                    <img src="img/photo1.png" alt="Profile Picture" class="profileImg">
-                    <p>
-                        I am Michael Willis, and my passion for technology, programming, and design drives me every day. As a web developer, I have specialized in the fascinating world of FrontEnd.
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Toggle menu"
+      >
+        <span class="hamburger" aria-hidden="true">☰</span>
+      </button>
 
-                        I enjoy challenging limits and exploring new technologies to deliver creative and effective solutions.
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                        I am innovative, proactive, and capable of designing, creating, and maintaining attractive and interactive websites. I adapt to team needs and am committed to established work objectives.
-                    </p>
-                 </div>
+  <main class="site-main">
+    <!-- HERO -->
+    <section id="about" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-left">
+          <p class="greeting">Hi! I'm</p>
+          <h1 class="name">Michael Willis</h1>
+          <p class="title">Web Developer</p>
+          <p class="slogan">Transforming ideas into reality with clean code and creative UX.</p>
 
-            <div class="cardsColumn">
-                <!-- Card 1 -->
-                <div class="card1">
-                    <div class="cardIcon">
-                        <img src="img/svg1.svg" alt="Card Icons">
-                    </div>
+          <div class="actions">
+            <a class="btn btn--outline" href="#" download>Download CV</a>
+          </div>
+        </div>
 
-                    <h3 class="cardTitle">UX/UI DESIGN</h3>
+        <div class="hero-right">
+          <img src="img/pfp.png" alt="Michael Willis - profile" class="profile-img">
+        </div>
+      </div>
+    </section>
 
-                    <p class="cardDescription">
-                        Focused on understanding users, solving problems, and creating prototypes for exceptional digital experiences.
-                    </p>
+    <!-- ABOUT / CARDS -->
+    <section class="aboutSection">
+      <div class="about-grid">
+        <article class="profile-card card">
+          <h2 class="card-heading">Who am I?</h2>
+          <img src="img/photo1.png" alt="Portrait of Michael Willis" class="profileImg">
+          <p class="card-text">
+            I'm Michael Willis — a Frontend developer passionate about technology, design, and building
+            responsive, accessible interfaces. I love exploring new tools and delivering pixel-perfect,
+            performant web experiences.
+          </p>
+        </article>
 
-                </div>
+        <div class="card card--icon">
+          <div class="cardIcon" aria-hidden="true">
+            <img src="img/svg1.svg" alt="">
+          </div>
+          <h3 class="cardTitle">UX / UI Design</h3>
+          <p class="cardDescription">Understanding users, prototyping flows, and crafting intuitive digital experiences.</p>
+        </div>
 
-                <!-- Card 2 -->
-                <div class="card2">
-                    <div class="cardIcon">
-                        <img src="img/svg2.svg" alt="Card Icons">
-                    </div>
+        <div class="card card--icon">
+          <div class="cardIcon" aria-hidden="true">
+            <img src="img/svg2.svg" alt="">
+          </div>
+          <h3 class="cardTitle">Tech</h3>
+          <p class="cardDescription">Tooling and languages to build reliable, fast frontends and delightful UIs.</p>
+        </div>
 
-                    <h3 class="cardTitle">TECH</h3>
+        <div class="card card--icon">
+          <div class="cardIcon" aria-hidden="true">
+            <img src="img/svg3.svg" alt="">
+          </div>
+          <h3 class="cardTitle">Frontend Developer</h3>
+          <p class="cardDescription">Responsive, accessible components and modern JavaScript-driven experiences.</p>
+        </div>
+      </div>
+    </section>
 
-                    <p class="cardDescription">
-                        Stack of design tools and development languages to deliver high-performance digital solutions.
-                    </p>
-                </div>
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <p>Showcase your best work here.</p>
+    </section>
 
-                <!-- Card 3 -->
-                <div class="card3">
-                    <div class="cardIcon">
-                        <img src="img/svg2.svg" alt="Card Icons">
-                    </div>
+    <section id="skills" class="content-section">
+      <h2>Skills</h2>
+      <p>List your technical and soft skills here.</p>
+    </section>
 
-                    <h3 class="cardTitle">FRONTEND DEVELOPER</h3>
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>Provide your contact information or a contact form here.</p>
+    </section>
+  </main>
 
-                    <p class="cardDescription">
-                        Developing innovative user interfaces with best practices, responsive designs, and content optimization.
-                    </p>
-                </div>
-                </div>
-            </div>
-         </section>
+  <footer class="site-footer">
+    <p>&copy; 2025 Michael Willis. All rights reserved.</p>
+  </footer>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase your best work here.</p>
-        </section>
+  <script>
+    // Menu toggle with accessible attributes
+    (function () {
+      const btn = document.getElementById('menuToggle');
+      const nav = document.getElementById('navLinks');
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>List your technical and soft skills here.</p>
-        </section>
+      btn.addEventListener('click', () => {
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isExpanded));
+        nav.classList.toggle('active');
+      });
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Provide your contact information or a contact form here.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Michael Willis. All rights reserved.</p>
-    </footer>
-
-    <script> //script for hamburguer menu functionality
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        menuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            navLinks.classList.toggle('active');
+      // Close nav on link click (only mobile)
+      nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
         });
-
-        // Close menu when a link is clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+      });
+    })();
+  </script>
 </body>
 </html>
