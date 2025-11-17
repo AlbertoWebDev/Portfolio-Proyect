@@ -163,9 +163,7 @@ section {
   margin-top: 1.5rem;
 }
 
-.project--icon img { width: 400px;
-
-}
+.project--icon img { width: 400px; }
 
 /* Footer */
 .site-footer {
