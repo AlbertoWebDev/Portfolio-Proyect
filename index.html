@@ -131,8 +131,26 @@
 
     <section id="contact" class="content-section">
       <h2>Contact</h2>
-      <p>Provide your contact information or a contact form here.</p>
-    </section>
+        <form>
+          <div class="card">
+            <div class=" card form-card">
+              <label id="text-area" for="name">Your Name<br></label>
+              <input type="text" id="form-element" name="name" placeholder="Write your name" required value>
+            </div>
+            <div class="card form-card">
+              <label id="text-area" for="mail">Your Mail<br></label>
+              <input type="mail" id="form-element" name="mail" placeholder="Write your mail" required value>
+            </div>
+            <div class="card form-card">
+              <label id="text-area" for="text">Your Message<br></label>
+              <input type="text" id="form-element" name="message" placeholder="Write your message here" required value>
+            </div>
+            <button type="card-submit" class="contact-form-btn">
+              Send
+            </button>
+          </div>
+        </form>
+      </section>
   </main>
 
   <footer class="site-footer">
